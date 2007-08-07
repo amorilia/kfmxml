@@ -8,8 +8,8 @@
 	
 
 	<compound name="action">
-		<add name="Action Name" type="string" ver2="16909312" />
-		<add name="Action File Name" type="string" />
+		<add name="Action Name" type="sizedstring" ver2="16909312" />
+		<add name="Action File Name" type="sizedstring" />
 		<add name="Unknown Int 1" type="int" />
 		<add name="Num Events" type="int" />
 		<add name="Events?" type="events?" arr1="Num Events" />
@@ -17,7 +17,7 @@
 	</compound>
 	<compound name="event string">
 		<add name="Unknown Int" type="int" />
-		<add name="Event" type="string" />
+		<add name="Event" type="sizedstring" />
 	</compound>
 	<compound name="events?">
 		<add name="Id" type="int" />
@@ -30,8 +30,8 @@
 	<compound name="kfm">
 		<add name="Header String" type="headerstring" />
 		<add name="Unknown Byte" type="byte" ver1="33554432" />
-		<add name="NIF File Name" type="string" ver1="16909312" />
-		<add name="Master" type="string" ver1="16909312" />
+		<add name="NIF File Name" type="sizedstring" ver1="16909312" />
+		<add name="Master" type="sizedstring" ver1="16909312" />
 		<add name="Unknown Int 1" type="int" ver1="16909312" />
 		<add name="Unknown Int 2" type="int" ver1="16909312" />
 		<add name="Unknown Float 1" type="float" ver1="16909312" />
