@@ -2,24 +2,26 @@
 <!DOCTYPE niflotoxml>
 <niflotoxml version="0.6.0.0">
 
-	<version>1.0</version>
-	<version>1.2.4b</version><!--16927488 Oblivion-->
-	<version>2.0.0.0b</version>
-	<version>2.1.0.0b</version>
-	<version>2.2.0.0b</version><!--33685515 Emerge-->
+	<version num="1.0">?</version>
+	<version num="1.2.4b">Oblivion</version><!--16927488-->
+	<version num="2.0.0.0b">Civilization IV</version>
+	<version num="2.1.0.0b">?</version>
+	<version num="2.2.0.0b">Emerge</version><!--33685515-->
 
 	<compound name="Animation">
 		<add name="Event Code" type="int" />
 		<add name="Name" type="sizedstring" ver2="16927488" />
-		<add name="File" type="sizedstring" />
-		<add name="Index?" type="int" />
+		<add name="KF File Name" type="sizedstring" />
+		<add name="Index" type="int">An index?</add>
 		<add name="Num Transitions" type="int" />
 		<add name="Transitions" type="Transition" arr1="Num Transitions">Max = Num Animations -1? No transition from animation to itself.</add>
 	</compound>
+
 	<compound name="Intermediate Anim">
 		<add name="Unknown Int" type="int" />
 		<add name="Event" type="sizedstring" />
 	</compound>
+
 	<compound name="Transition">
 		<add name="Animation" type="int">Refers to another animation</add>
 		<add name="Type" type="int" />
@@ -28,7 +30,8 @@
 		<add name="Intermediate Anims" type="Intermediate Anim" arr1="Num Intermediate Anims" cond="Type != 5" />
 		<add name="Num TextKeyPairs" type="int" cond="Type != 5" />
 	</compound>
-	<compound name="kfm">
+
+	<compound name="Kfm">
 		<add name="Header String" type="headerstring" />
 		<add name="Unknown Byte" type="byte" ver1="33554432" />
 		<add name="NIF File Name" type="sizedstring" ver1="16909312" />
