@@ -31,8 +31,9 @@
         <add name="Num TextKeyPairs" type="int" cond="Type != 5" />
     </compound>
 
-    <compound name="Kfm">
+    <compound name="Header">
         <add name="Header String" type="HeaderString" />
+        <add name="Text String" type="TextString" ver2="1.0" />
         <add name="Unknown Byte" type="byte" ver1="33554432" />
         <add name="NIF File Name" type="SizedString" ver1="16909312" />
         <add name="Master" type="SizedString" ver1="16909312" />
@@ -42,7 +43,7 @@
         <add name="Unknown Float 2" type="float" ver1="16909312" />
         <add name="Num Animations" type="int" ver1="16909312" />
         <add name="Animations" type="Animation" arr1="Num Animations" ver1="16909312" />
-        <add name="Unknown Int 3" type="int" ver1="16909312" />
+        <add name="Unknown Int" type="int" ver1="16909312" />
     </compound>
 
 </niftoolsxml>
